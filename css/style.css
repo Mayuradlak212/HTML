@@ -1,0 +1,108 @@
+ /* *{
+  background-color: chartreuse;
+ }  */
+  
+/*   
+  div{
+ 
+     color: azure;
+     background-color: red;
+     margin: 10px;
+     padding: 20px;
+  }
+
+ p{
+
+ } */
+
+ .body-container{
+  background-color: cyan;
+ }
+
+ .body-container h1{
+  color: green;
+ }
+
+ .body-container .para-container{
+  background-color: yellow;
+  margin: 10px;
+  padding: 20px;
+  color: black;
+ }
+
+ #data-container{
+  background-color: coral;
+  color: white;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 10px;
+ }
+
+
+ .image-container{
+   margin: 10px;
+   padding: 10px;
+   height: 50vh;
+   width: 50%;
+   background-size: cover;
+   object-fit: contain;
+   background-position: center;
+ }
+ .image-container img{
+   height: 70vh;
+   width: 80vw;
+   background-size: cover;
+   object-fit: contain;
+   background-position: center;
+   opacity: 0.7;
+ }
+
+
+ .nav-container{
+   background-color: red;
+   padding: 20px;
+   /* margin: 20px; */
+   display: flex;
+   width:100%;
+   height: auto;
+ }
+
+ 
+ .nav-container p{
+font-size: 17px;
+color: white;
+       padding: 5px;
+ }
+ .nav-container p:hover{
+   border-bottom: 2px solid green;
+   color: cornflowerblue;
+   cursor: pointer;
+ }
+
+/* .number-container{
+   display: flex;
+   padding: 20px;
+   margin: 20px;
+   max-width: 300px;
+   overflow-x: auto;
+   background-color: chartreuse;
+} */
+
+.number-container{
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+   margin: 20px;
+   max-width: 300px;
+   max-height: 400px;
+   overflow-x: auto;
+   overflow-y: auto;
+   background-color: chartreuse;
+}
+.number-container div{
+   width:10vw;
+   background-color: blue;
+   padding: 20px;
+   margin: 20px;
+
+}
