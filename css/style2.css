@@ -1,0 +1,24 @@
+.box-container{
+    margin: 50px auto;
+    max-width:50vw;
+    max-height: 50vh;
+    overflow-x: auto;
+    display: flex;
+    overflow-y: auto;
+    background-color: chartreuse;
+}
+.card-container{
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    width: 80%;
+}
+.box-container .card-container div{
+    padding: 20px;
+    margin: 10px;
+    width: 500px;
+    height: 400px;
+    background-color: cornflowerblue;
+}
