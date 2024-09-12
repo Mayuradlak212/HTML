@@ -45,6 +45,6 @@ localStorage.setItem("college","OIST Indore ");
 console.log("Local Storage Data --> Get ");
 
 
-localStorage.removeItem("name");
+localStorage.removeItem("name");  // Remove the name key data from localStorage
 // localStorage.clear()
 // Delete local storage data
