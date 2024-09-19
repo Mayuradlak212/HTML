@@ -2,7 +2,7 @@
 // setTimeout
 // setInterval
 // clearInterval
-// Spread Opretor ,Destructuring
+// Spread Opretor ,Destructuring , Promise 
 
 console.log("Set Time Interval ");
 
