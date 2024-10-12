@@ -1,0 +1,81 @@
+Node js :Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!
+Express Js : It is the library of JavaScript which is used to write server side scripting using javascript 
+
+
+Package json --> It will Contain all Information about  Project and Library or Module which we are using in Project 
+Package Lock Json --> It will Contain all Information about Individual Library and All Packages which we have Installed also it will Contain Dependancy of Node Module packages 
+
+Node Module --> It will Contain all function and Codebase which we aare Installed using npm i command for External Modules 
+
+Module Installation --> npm install package-name
+Module Unistallation --> npm uninstall package-name
+
+
+API Method --> GET , PUT , PATCH , POST , DELETE 
+
+Server --> Server is a Software program or Storage Device that will provide service to other devices 
+
+
+API creatiog Syntax 
+server intance  - method name , url , callback (request,response) 
+app.get("/home",(request,response)=>{
+    return response.status(200).json({
+        status: 200,
+        message:"Congratulations we have created API Successfully "
+    })
+})
+
+Routing Syntax 
+app.METHOD(PATH, HANDLER)
+Where:
+
+app is an instance of express.
+METHOD is an HTTP request method, in lowercase.
+PATH is a path on the server.
+HANDLER is the function executed when the route is matched.
+
+
+
+--------------------MongoDB Function --------------------------------
+One Database Can Contain Multiple collection 
+MongoDB is Store Data in Document Format 
+ It wil Contain data in JSON Format 
+Each Record have Unique _id for Unique collection Record it will Created by MongoDb
+
+use database_name -- Use to select Database 
+show dbs -- For see All Database 
+show collections --. for see all the collections from current database 
+db.createCollection("name") -- Create a new collection
+db.collectionName.drop() -- Drop a collection from database
+db.users.insertOne({name:"Mayur adlaak",email:"abc@gmail.com"})  --  it is use to Insert one Record in Collection 
+db.users.insertMany([{name:"Anushka ",email:"anushka@gmail.com"},{name:"Pravin",email:"pravin@gmail.com"}]) it is use to Insert Multiple  Record in Collection 
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6702995cac01fd8cd3653f49'),
+    '1': ObjectId('6702995cac01fd8cd3653f4a')
+  }
+}
+
+
+db.users.find()  --- This Function is use to get All Data from Collection 
+
+db.users.find({name:'Pravin'}) --> It is used to get All Data from Collection based on given condition 
+
+
+db.users.find({_id:ObjectId('6702995cac01fd8cd3653f49'),name:"dsd",email:""}) --> It is used to get All Data from Collection based on
+
+db.users.findOne({_id:ObjectId('6702995cac01fd8cd3653f49')})   --> It is used to get 1 record of  Data from Collection based on condition 
+
+db.users.find().pretty()  -- or pretty function is used to format data 
+
+db.users.updateOne({name:"Pravin Singh"},{$set:{name:"Pravin Singh",phone:"654656"}},{new:true})-- This Function is Used to Update Existing data or add new Data in Object record 
+
+
+db.users.updateMany({name:"pravin"},{$set:{name:"Pravin Singh"}},{new:true})  -- used  for Update Multiple Data 
+
+db.users.deleteOne({phone:"654656"})  -- it is used to delete Single Record from Collection 
+db.users.deleteMany({phone:"654656"})  -- it is used to delete Multiple Record from Collection 
+
+db.users.countDocuments({name:"Anushka"})  -- used to get Count of Records
+db.dropDatabase()  -- It will be delete database 
